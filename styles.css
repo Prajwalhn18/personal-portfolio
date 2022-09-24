@@ -44,10 +44,14 @@
     margin-left: 1rem;
 }
 
+#horizontal-line {
+    border-bottom: 1px solid black;
+}
+
 .profile-intro {
     margin-top: 1rem;
     margin-left: 2rem;
-    max-width: 500px;
+    max-width: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,8 +64,48 @@
 
 }
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.skills-container h2 {
+    border-bottom: 1px solid black;
+    font-style: italic;
+}
+
+.individual-skill {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 580px;
+}
+
+.individual-skill span{
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    flex: 10%;
+}
+
+.individual-skill span:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .experiences-container {
     padding: 2px;
+}
+
+.container h2 {
+    border-bottom: 1px solid black;
+    font-style: italic;
 }
 
 .timeline {
