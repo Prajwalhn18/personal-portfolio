@@ -44,10 +44,6 @@
     margin-left: 1rem;
 }
 
-#horizontal-line {
-    border-bottom: 1px solid black;
-}
-
 .profile-intro {
     margin-top: 1rem;
     margin-left: 2rem;
@@ -154,6 +150,59 @@
     font-weight: 300;
 }
 
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.individual-project {
+    margin-right: 1rem;
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    min-width: 100px;
+    flex: 25%;
+}
+
+.individual-project p {
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: justify;
+}
+
+.individual-project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.individual-project ul li {
+    text-align: left;
+}
+
+#button {
+    width: 30%;
+    height: 30px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-size: small;
+}
+
+#button:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 @media screen and (min-width: 768px) {
     .timeline::before {
         content: '';
@@ -216,4 +265,15 @@
     .timeline ul li:hover:after {
         background-color: orange;
     } 
+
+    .project-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        text-align: center;
+        max-width: 600px;
+    }
 }
